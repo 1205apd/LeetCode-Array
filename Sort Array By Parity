@@ -1,0 +1,13 @@
+class Solution:
+    def sortArrayByParity(self, nums: List[int]) -> List[int]:
+        enums=[]
+        onums=[]
+        fnums=[]
+        for i in nums:
+            if i%2==0:
+                enums.append(i)
+            else:
+                onums.append(i)
+        fnums=enums+onums
+        return fnums
+        
