@@ -1,0 +1,14 @@
+class Solution:
+    def fib(self, n: int) -> int:
+        a=-1
+        b=1
+        a1=[]
+        for i in range(n+1):
+            c=a+b
+            a1.append(c)
+            a=b
+            b=c
+        return(a1[n])
+            
+            
+        
